@@ -5,6 +5,9 @@
   <p>Offline, read-only Docker Compose review · Claude Code + Codex Agent Skill · Python 3.10+</p>
 </div>
 
+<p align="center"><img src="assets/hero.svg" alt="Illustrated Compose service health gate" width="100%" /></p>
+
+
 ## Why this exists
 Docker Compose starts dependencies before dependents but a started container isn't necessarily a ready application. This static auditor surfaces missing dependency services, readiness gates without healthchecks, dependency cycles and suspicious completion/restart combinations. It does **not** contact Docker or execute commands from input.
 

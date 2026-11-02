@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+<title id="t">Docker Compose: startup is not the same as readiness</title>
+<desc id="d">Two connected application service cards, a healthy database readiness gate leading to an API.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#0A1929"/><stop offset="1" stop-color="#122B42"/></linearGradient><linearGradient id="edge" x1="0" x2="1"><stop stop-color="#00D9FF"/><stop offset="1" stop-color="#00FFA3"/></linearGradient><filter id="soft"><feGaussianBlur stdDeviation="18"/></filter></defs>
+<rect width="1200" height="520" rx="30" fill="url(#bg)"/>
+<circle cx="1075" cy="105" r="130" fill="#00D9FF" opacity=".06" filter="url(#soft)"/>
+<g opacity=".1" stroke="#88C3D7"><path d="M0 100H1200M0 200H1200M0 300H1200M0 400H1200M100 0V520M200 0V520M300 0V520M400 0V520M500 0V520M600 0V520M700 0V520M800 0V520M900 0V520M1000 0V520M1100 0V520"/></g>
+<text x="72" y="93" fill="#EAFBFF" font-size="42" font-family="Inter,Arial,sans-serif" font-weight="700">Startup is not readiness.</text>
+<text x="72" y="130" fill="#9AB7C9" font-size="20" font-family="Inter,Arial,sans-serif">Check the contracts between your Compose services before deployment.</text>
+<rect x="72" y="186" width="395" height="226" rx="20" fill="#112C43" stroke="#2E6579"/>
+<rect x="95" y="213" width="95" height="28" rx="14" fill="#174E54"/>
+<text x="142" y="232" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#00FFA3">HEALTHY</text>
+<text x="100" y="287" font-family="Inter,Arial,sans-serif" font-size="33" font-weight="700" fill="#FFFFFF">database</text>
+<text x="100" y="324" font-family="ui-monospace,monospace" font-size="17" fill="#94D4E8">healthcheck: enabled</text>
+<text x="100" y="357" font-family="ui-monospace,monospace" font-size="17" fill="#B2CAD6">interval: 10s</text>
+<rect x="729" y="186" width="395" height="226" rx="20" fill="#112C43" stroke="#2E6579"/>
+<rect x="752" y="213" width="125" height="28" rx="14" fill="#183B58"/>
+<text x="814" y="232" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700" fill="#00D9FF">DEPENDENT</text>
+<text x="757" y="287" font-family="Inter,Arial,sans-serif" font-size="33" font-weight="700" fill="#FFFFFF">api</text>
+<text x="757" y="324" font-family="ui-monospace,monospace" font-size="17" fill="#94D4E8">depends_on:</text>
+<text x="757" y="357" font-family="ui-monospace,monospace" font-size="17" fill="#00FFA3">service_healthy</text>
+<path d="M483 300H707" stroke="url(#edge)" stroke-width="5" stroke-linecap="round"/>
+<path d="M692 286L713 300L692 314" stroke="#00FFA3" stroke-width="5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="522" y="253" width="146" height="29" rx="14.5" fill="#0A1929" stroke="#00D9FF"/>
+<text x="595" y="272" fill="#EAFBFF" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="14">READINESS GATE</text>
+<path d="M72 457H1124" stroke="url(#edge)" stroke-width="3" opacity=".7"/>
+<text x="72" y="486" fill="#A8C6D4" font-family="Inter,Arial,sans-serif" font-size="15">READ-ONLY  /  DETERMINISTIC FINDINGS  /  NO DOCKER SOCKET</text>
+</svg>
